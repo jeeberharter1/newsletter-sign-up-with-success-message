@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    
+    <title>Newsletter sign-up form with success message</title>
+</head>
+<body>
+    <main class="main">
+        <!-- form page -->
+        <section class="form" id="form-container">
+            <!-- hero image -->
+            <div class="header">
+                <img src="./assets/images/illustration-sign-up-mobile.svg" alt="sign up">
+            </div>
+
+            <!-- sign-up form -->
+            <div class="content">
+                <h1 class="title">Stay updated!</h1>
+                <p class="subtitle">
+                    Join 60,000+ product managers receiving monthly updates on:
+                </p>
+
+                <ul class="content__list">
+                    <li class="content__item">
+                        <img src="./assets/images/icon-list.svg" class="content__icon" alt="" aria-hidden="true">
+                        <p class="content__item__text">Product discovery and building what matters</p>
+                    </li>
+
+                    <li class="content__item">
+                        <img src="./assets/images/icon-list.svg" class="content__icon" alt="" aria-hidden="true">
+                        <p class="content__item__text">Measuring to ensure updates are a success</p>
+                    </li>
+
+                    <li class="content__item">
+                        <img src="./assets/images/icon-list.svg" class="content__icon" alt="" aria-hidden="true">
+                        <p class="content__item__text">And much more!</p>
+                    </li>
+                </ul>
+
+                <form action="#" class="content__form" id='form' novalidate>
+                    <div class="content__form__label">
+                        <label for="email">Email address</label>
+                        <span class="content__form__error" id="error">Valid email required</span>
+                    </div>
+                    <input
+                        type="email"
+                        class="input"
+                        id="email"
+                        placeholder="email@company.com"
+                    >
+                    <button class="content__form__btn button" id="subscribe-btn">Subscribe to monthly newsletter</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- confirmation page -->
+        <section class="confirmation" id="confirmation">
+            <div class="confirmation__content">
+                <img src="./assets/images/icon-success.svg" alt="checkmark">
+
+                <h2 class="title">Thanks for subscribing!</h2>
+                <p class="subtitle">
+                    A confirmation email has been sent to <b><span id="email-confirm"></span></b>. 
+                    Please open it and click the button inside to confirm your subscription.
+                </p>
+            </div>
+            
+            <button class="confirmation__btn button" id="dismiss-btn">Dismiss message</button>
+        </section>
+    </main>
+
+    <script src="./assets/scripts/index.js"></script>
+</body>
+</html>
